@@ -1,0 +1,197 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    transition: .3s ;
+    // font-family: Arial;
+    font-family: 'Proxima Nova', Georgia, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav-link{
+    color: #252c30 !important;
+    transition: all .5s;
+}
+.active,
+.nav-link.active,
+.nav-link:hover{
+    color: #ffc000 !important;
+}
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+    height: 32rem;
+}
+.carousel-item {
+    background-image: url(../image/home/Home-img.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -20;
+}
+.carousel-pos{
+    position: relative;
+}
+.carousel-caption {
+    width: 100% !important;
+    left: 50% !important;
+    bottom: 50% !important;
+    transform: translate(-50% ,50%) !important;
+    z-index: -10 !important;
+}
+.carousel-indicators [data-bs-target] {
+    background-color: #ffc000 !important;
+}
+#h-color{
+    color: #252c30;
+}
+.team-color,
+#h-color span{
+    color: #ffc000;
+}
+#p-color{
+    color: #232323;
+}
+#img-hovered{
+    z-index: 100;
+    overflow: hidden;
+}
+.layer{
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #ffc00082;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#img-hovered:hover .layer{
+    bottom: 0%;
+}
+
+#features-card{
+    background-color: #2d3e50;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: 0.2s;
+
+}
+#features-card{
+    border: 5px solid #ffffff;
+    
+}
+#features-card:hover{
+    background-color: #FFF;
+    border: 1px solid rgb(255, 192, 0);
+    
+}
+#features-card:hover p{
+    color: #000 !important;
+}
+#features-card:hover svg #circel{
+    fill: rgb(255, 192, 0)
+    
+}
+#features-card:hover svg #path{
+    fill: rgb(255, 255, 255)
+}
+#projects{
+    background-image: url(../image/Work/work.png);
+    background-position: center;
+    background-size: cover;
+}
+.team-content{
+    background-color: #2d3e50 !important;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        li:hover{
+            background: #ffc000;
+            cursor: pointer;
+        }
+.socilmedia{
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            background: #fff;
+            color: #2d3e50;
+            margin: 10px;
+            transition: .3s;
+            cursor: pointer;
+        }
+        li:hover{
+            background: #ffc000;
+        }
+    }
+}
+}
+#client{
+    background: #f4f4f4;
+    width: 100%;
+}
+.client-color{
+    color: #232323;
+    font-size: 15px;
+    font-style: italic;
+}
+
+p::selection{
+    background: #ffc000;
+    
+}
+.footer-icon{
+    li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        transition: .3s;
+        a{
+            color: #2d3e50;
+            transition: .3s;
+        }
+    }
+}
+.footer-icon li:hover{
+    background: #2d3e50;
+}
+li:hover a{
+    color: #FFF;
+}
+.news-color{
+    background: #ffc000;
+}
